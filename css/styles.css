@@ -1,0 +1,396 @@
+
+@font-face {
+    font-family:'Roboto';
+    src: url('/fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+
+    margin:0px;
+    padding:0px;
+
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    border: 8px solid orange;
+
+}
+
+img{
+
+    order: 1;
+
+}
+
+h1{    
+
+    order: 2;
+    flex-grow: 2;
+    text-align: center;
+    color:#6d3cb8 ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.gallery-container{
+
+    margin: 8em 0em;
+
+}
+
+.titulo-2{
+
+    color:#6d3cb8 ;
+    border-right: 0.1em solid aqua;
+    border-bottom: 0.1em solid aqua;
+    margin: 0 1em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.color-tittle{
+
+    color:chocolate;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+/*Barra de navegacion*/
+
+.btn-menu{
+    
+    padding: .8rem;
+    margin-right: 0.5rem;
+    background-color: gray;
+    color: wheat;
+    border-radius: .5rem;
+    text-decoration:none;
+
+}
+
+#nav-container{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+
+}
+
+/*Contenido Nosotros*/
+
+.section-img{
+    width: 20%;
+}
+
+p{
+    order: 2 
+    
+}
+
+#Quienes_somos{
+
+    margin-top: 5em;
+
+}
+
+.contenido2{
+
+    font-size: 1em;
+    font-weight: bold;
+    color:rgb(66, 6, 99);
+    border:3px solid brown;
+    border-radius:22px;
+    background-color:#e3d193;
+    padding:4em;
+    margin: 0 1em 0 0;
+
+}
+
+.contenido{
+    display:flex;  
+    align-items: center;
+    gap: .5rem;    
+ }
+
+/*Galeria de images*/
+
+.figure-container{
+
+ 
+    border: solid 0.1em #706369;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+
+}
+
+.item-container{
+
+    margin:2em 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    padding:0 1em;
+    gap: 1em 1em;
+
+}
+
+.image-item{
+
+    width:100%;
+    transition: all 1.5s;
+    overflow: hidden;
+    transition: all 1.5s;
+
+}
+
+.image-item:hover{
+
+    transform: scale(1.2);
+
+
+}
+
+.figure-item{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.figcaption-item{
+
+    color:#6d3cb8;
+    font-family: 'Roboto', sans-serif;
+    margin: 1em 0;
+
+}
+ /*Estilos Footer*/
+
+footer{
+    text-align: center;
+    border: 8px solid orange;
+    margin-top: 20px;
+    background-color: rgb(132, 221, 221);
+    font-size:larger; color: blue;
+    font-family: "Roboto";
+  }
+
+/* Estilo formulario de contacto*/
+
+
+  
+#formulario-container{
+
+    font-family: "Roboto";
+    border: #6d3cb8 solid 0.1em;
+    color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em;
+    border-radius: 15px;
+    background-color: rgba(66, 6, 99, 0.8);
+
+  } 
+
+#formulario-container:hover{
+
+    background-color: rgba(66, 6, 99, 1);
+
+  }
+   
+.form-item{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5em 0;
+
+  }
+
+#contacto{
+
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#submit-button{
+
+    width: 6em;
+    border-radius: 15px;
+    margin:1em 0em 0em 0em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#mensaje-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  label{
+
+    text-align: center;
+    width: 8em;
+
+
+  }
+
+  main{
+
+    margin: 5em 0em;
+
+  }
+
+ /*BreakPoints y estilos para diseño responsivo*/
+
+@media (max-width: 550px){
+    
+    h1{    
+
+        display: none;
+        
+    }
+
+    header{
+
+     justify-content: center;
+
+    
+    }
+    
+
+    /*seccion nosotros*/
+
+    .section-img{
+    
+        display: none;
+
+    }
+
+
+    .contenido2{
+
+        margin: 0 1em 0 1em;
+        padding:10px;
+    
+    }
+
+
+    /*barra de navegacion*/
+    
+    #nav-container{
+    
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+
+    /*Pagina contacto*/
+    
+    #formulario-container{
+
+        flex-direction: column;
+        align-items: center;
+    
+      } 
+    
+       
+    .form-item{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin:0.5em 0;
+    
+      }
+
+    .text-item{
+
+        width: 80%;
+    }
+    
+    #contacto{
+    
+        width: 50%;
+        margin: 0 auto;
+    
+    }
+    
+    #mensaje-container{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+
+
+/*Galeria de imagenes*/
+
+    
+    .item-container{
+    
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+  }
+
+
+  @media (max-width: 820px){
+
+    /*barra de navegacion*/
+    
+    .btn-menu{
+
+        text-align: center;
+        flex-grow: 1;
+    
+    }
+    
+    #nav-container{
+    
+        display: flex;
+        margin-top: 1.5em;
+        justify-content: center;
+
+    
+    }
+
+    /*contacto*/
+
+    .form-item{
+        
+        display: flex;
+        flex-direction: column;
+    
+      }
+
+      #Mensaje{
+
+        width: 100%;
+
+    }
+  }
